@@ -1,0 +1,22 @@
+{
+    "parser": "babel-eslint",
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "env": {
+        "browser": true
+    },
+    "rules": {
+        "indent": ["error", 4],
+        "quotes": ["error", "single"],
+        "linebreak-style": 0,
+        "semi": ["error", "always"],
+        "comma-dangle": ["error", "always-multiline"],
+        "no-cond-assign": ["error", "always"],
+        "no-console": 1,
+        "no-underscore-dangle": "off",
+        "no-param-reassign":"off",
+        "global-require":"off"
+    }
+}

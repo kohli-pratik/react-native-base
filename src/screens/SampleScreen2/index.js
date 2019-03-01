@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, Button } from 'react-native';
+import PropTypes from 'prop-types';
 import { styles } from './styles';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -15,8 +16,14 @@ class SampleScreen2 extends Component {
                 </View>
                 <Footer></Footer>
             </View>
-        )
+        );
     }
 }
+
+SampleScreen2.propTypes = {
+    onUpdateStore: PropTypes.func,
+    navigation: PropTypes.object,
+    testAttr: PropTypes.string,
+};
 
 export default SampleScreen2;

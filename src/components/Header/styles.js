@@ -4,8 +4,13 @@ export const styles = StyleSheet.create({
     container: {
         width: '100%',
         height: '15%',
-        backgroundColor: 'blue',
+        backgroundColor: 'cyan',
         alignItems: "center",
         justifyContent: "center"
+    },
+    title: {
+        color: 'white',
+        fontWeight: 'bold',
+        fontSize: 14,
     }
 });

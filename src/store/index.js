@@ -4,7 +4,7 @@ import reducers from '../reducers';
 const store = createStore(
     reducers,
     {
-        testAttr: 'Initial Header'
+        testAttr: 'Initial Header',
     }
 );
 

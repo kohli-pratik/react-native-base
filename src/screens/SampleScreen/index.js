@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, Button, TouchableWithoutFeedback } from 'react-native';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { styles } from './styles';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -23,9 +24,16 @@ class SampleScreen extends Component {
                 </View>
                 <Footer></Footer>
             </View>
-        )
+        );
     }
 }
+
+
+SampleScreen.propTypes = {
+    onUpdateStore: PropTypes.func,
+    navigation: PropTypes.object,
+    testAttr: PropTypes.string,
+};
 
 const mapStateToProps = state => ({
     testAttr: state.testAttr,

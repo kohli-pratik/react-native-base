@@ -8,7 +8,7 @@ class Footer extends Component {
             <View style={styles.container}>
                 <Text>Footer</Text>
             </View>
-        )
+        );
     }
 }
 
